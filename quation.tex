@@ -1,0 +1,40 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{listings}
+\usetikzlibrary{automata,positioning}
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+\begin{document}
+\begin{align}
+    \forall i:\sum_{k=0}^{j}X_{i,k} = P_i\\
+    \forall j:\sum_{k=0}^{i}X_{k,j} \leq M_j\\
+    \forall j_1,j_2:(\sum_{k=0}^{i}X_{k,j_1} - X_{k,j_2})(e_{j_1}-e_{j_2}) \geq 0\\
+    \forall i,j:C_{i,j} = g_j \cdot \ln(d_{i,j} + A_{i,j} + S(w_i,w_j) + e)\\
+    \forall i:Z_i = 1 - \frac{X_{imax}}{P_i}\\
+    \forall i,j:X_{i,j} \in Z,X_{i,j}\geq 0
+\end{align}
+\[\alpha \sum_{k=0}^{i}\sum_{t=0}^{j}C_{k,t}\cdot X_{k,t} + (1-\alpha)\frac{\sum_{k=0}^{i}\sum_{t=0}^{j}C_{k,t}}{m\cdot n}\sum_{k=0}^{i}P_i Z_i \]
+\end{document}

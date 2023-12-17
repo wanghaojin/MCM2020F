@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+ 
+<GroundOverlay>
+  <name>Specific Area Example</name>
+  <Icon>
+    <href>rectangle.jpg</href>
+    <viewBoundScale>0.75</viewBoundScale>
+  </Icon>
+  <altitude>1.0</altitude>
+  <altitudeMode>absolute</altitudeMode>
+  <LatLonBox>
+    <north>140</north>
+    <south>40</south>
+    <east>120</east>
+    <west>20</west>
+    <rotation>-30</rotation>
+  </LatLonBox>
+</GroundOverlay>
+
+</kml>
